@@ -10,6 +10,9 @@ const router = express.Router();
 // Conecta ao banco
 mongoose.connect('mongodb+srv://balta:balta@ndstr.6alo8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
+// Carrega os Models
+const Product = require('./models/product');
+
 // Carrega as Rotas
 const indexRoute = require('./routes/index-routes')
 const productRoute = require('./routes/product-routes')
