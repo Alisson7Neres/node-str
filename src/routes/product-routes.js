@@ -9,14 +9,6 @@ router.get('/:slug', controller.getBySlug);
 router.get('/admin/:id', controller.getById);
 router.post('/', controller.post);
 router.put('/:id', controller.put);
-router.delete('/', controller.deletar);
-
-router.put('/:id', (req, res, next) => {
-  
-});
-
-router.delete('/:id', (req, res, next) => {
-
-});
+router.delete('/:id', controller.delete);
 
 module.exports = router;
